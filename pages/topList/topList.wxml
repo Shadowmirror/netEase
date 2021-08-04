@@ -1,0 +1,7 @@
+<view class="topListContent">
+    <view wx:for="{{topList}}" class="topListItem" wx:key="id" id="{{item.id}}" bindtap="toPlayList">
+        <image class="topListImg" src="{{item.coverImgUrl}}" ></image>
+        <view class="topListText">{{item.name}}</view>
+    </view>
+    <view class="more" bindtap="more">{{more}}</view>
+</view>

@@ -1,0 +1,7 @@
+<view class="recommendContent">
+    <view wx:for="{{recommendList}}" class="recommendItem" wx:key="id" id="{{item.id}}" bindtap="toPlayList">
+        <image class="recommendImg" src="{{item.picUrl}}" ></image>
+        <view class="recommendText">{{item.name}}</view>
+    </view>
+    <view class="more" bindtap="more">更多...</view>
+</view>

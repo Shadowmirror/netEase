@@ -1,0 +1,29 @@
+<view class="TodaySongContent">
+    <!-- 头部 -->
+    <view class="header">
+        <image src="https://api.dujin.org/bing/1920.php"></image>
+        <view class="date">
+            <text class="day">{{day}}</text>
+            <text class="month"> / {{month}}</text>
+        </view>
+    </view>
+    <!-- 列表区域 -->
+    <view class="listContent">
+        <view class="listHeader">
+            <text>播放全部</text>
+            <text class="changeMore">多选</text>
+        </view>
+    </view>
+
+    <!-- 内容区 -->
+    <scroll-view scroll-y="{{true}}" class="listScroll">
+        <view bindtap="toSong" class="scrollItem" wx:for="{{dailySongs}}" wx:key="id" data-index="{{index}}" data-song="{{item}}">
+            <image src="{{item.al.picUrl}}"></image>
+            <view class="musicInfo">
+                <text class="musicName">{{item.name}}</text>
+                <text class="author">{{item.ar[0].name}}</text>
+            </view>
+            <text class="iconfont icon-gengduo"></text>
+        </view>
+    </scroll-view>
+</view>

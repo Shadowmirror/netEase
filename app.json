@@ -1,0 +1,51 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/personal/personal",
+        "pages/topList/topList",
+        "pages/recommend/recommend",
+        "pages/search/search",
+        "pages/TodaySong/TodaySong",
+        "pages/song/song",
+        "pages/video/video",
+        "pages/login/login",
+        "pages/playList/playList"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "喵喵音乐",
+        "navigationBarTextStyle": "white",
+        "onReachBottomDistance":50
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#333",
+        "selectedColor": "#d43c33",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "主页",
+                "iconPath": "/pages/libs/img/tabs/home.png",
+                "selectedIconPath": "/pages/libs/img/tabs/home-active.png"
+            },
+            {
+                "pagePath": "pages/video/video",
+                "text": "视频",
+                "iconPath": "/pages/libs/img/tabs/video.png",
+                "selectedIconPath": "/pages/libs/img/tabs/video-active.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "个人",
+                "iconPath": "/pages/libs/img/tabs/my.png",
+                "selectedIconPath": "/pages/libs/img/tabs/my-active.png"
+            }
+        ]
+    },
+    "requiredBackgroundModes": [
+        "audio"
+    ]
+}

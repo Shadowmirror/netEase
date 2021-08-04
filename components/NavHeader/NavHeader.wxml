@@ -1,0 +1,7 @@
+<view class="header">
+    <text class="title">{{title}}</text>
+    <view>
+        <text>{{nav}}</text>
+        <text data-where="{{tap}}" bindtap="toWhere" class="more">查看更多</text>
+    </view>
+</view>

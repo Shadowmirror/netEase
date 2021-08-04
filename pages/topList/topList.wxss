@@ -1,0 +1,37 @@
+.topListContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.topListItem {
+    margin-top: 20rpx;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+}
+
+.topListImg {
+    width: 200rpx;
+    height: 200rpx;
+    margin-bottom: 20rpx;
+}
+
+.topListText {
+    width: 300rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.more{
+    margin-top: 50rpx;
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+}
